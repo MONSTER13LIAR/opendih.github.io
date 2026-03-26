@@ -766,6 +766,7 @@ tr:last-child td {
   background: #c82333;
 }
 
+
 footer {
   padding: 60px 0;
   font-size: 0.9rem;
@@ -777,6 +778,7 @@ footer {
   transition: border-color 0.3s, color 0.3s;
 }
 
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -787,11 +789,14 @@ footer {
   section {
     padding: 60px 0;
   }
+  
   td {
     display: block;
     width: 100% !important;
     border-right: none !important;
   }
+
+
   td:first-child {
     border-bottom: none;
     padding-bottom: 5px;

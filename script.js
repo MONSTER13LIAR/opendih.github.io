@@ -4,7 +4,6 @@ let blogCache = {};
 let discoveryComplete = false;
 let teamMembers = null;
 
-const SECRET_KEY = "iloveopendih";
 let keySequence = "";
 
 function toggleTheme() {
@@ -279,6 +278,10 @@ function openSecretModal() {
   const today = new Date();
   const todayFilename = formatDateFilename(today);
 
+  const footertext = document.getElementById("footer-text").textContent;
+  document.getElementById("footer-text").textContent =
+    "© 2026 OpenDih Research Collective. All rights not reserved.";
+
   let deleteOptions = blogFiles
     .map((file) => {
       const data = blogCache[file];
@@ -295,6 +298,7 @@ function openSecretModal() {
   document.getElementById("modal-overlay").classList.add("active");
   document.body.style.overflow = "hidden";
 }
+const SECRET_KEY = "iloveopendih";
 
 function downloadNewBlog() {
   const title = document.getElementById("secret-title").value.trim();
