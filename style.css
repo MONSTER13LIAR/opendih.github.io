@@ -530,7 +530,8 @@ tr:last-child td {
   transition: border-color 0.2s, background 0.3s, transform 0.2s, box-shadow 0.3s;
   position: relative;
   overflow: hidden;
-  width: 300px;
+  width: 420px;
+  height: 200px;
   flex-shrink: 0;
   box-sizing: border-box;
 }
